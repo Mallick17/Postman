@@ -26,3 +26,12 @@ Let’s start with a **GET request** to fetch data from a free API.
 }
 ```
 *Status Code: `200 OK` (Success!)*
+
+## 3. Understanding HTTP Methods
+| Method  | Use Case                     | Example URL                          |
+|---------|------------------------------|---------------------------------------|
+| `GET`   | Retrieve data                | `GET /todos/1`                        |
+| `POST`  | Create new data              | `POST /todos`                         |
+| `PUT`   | Update existing data         | `PUT /todos/1`                        |
+| `DELETE`| Delete data                  | `DELETE /todos/1`                     |
+
