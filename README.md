@@ -131,7 +131,7 @@ Postman is favored for its user-friendly tools and convenience. Here are some ke
 ## 2. Sending Your First Request
 Let’s start with a **GET request** to fetch data from a free API.  
 
-### Example: Fetch a Todo
+### Sending a GET Request
 1. Open Postman and click **New Request**.
 2. Set the request method to **GET**.
 3. Enter the API endpoint URL (e.g., `https://api.postman.com/jobs`).
