@@ -6,7 +6,7 @@ Postman is a widely-used tool for API testing, enabling developers to create, te
 - **Create test suites** called collections.
 - **Make various HTTP requests** such as GET, POST, PUT, PATCH.
 - **Convert APIs to code** in languages like JavaScript and Python.
-- 
+
 ### Key Terminologies
 - **API (Application Programming Interface):** Software that enables two applications to communicate.
 - **HTTP (Hypertext Transfer Protocol):** Rules for transmitting data on the web, including text, images, and multimedia.
