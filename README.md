@@ -63,5 +63,22 @@ Example Response:
 }
 ```
 
+## 6. Saving Requests to Collections
+To save and organize requests:
+1. Click the **Save** button after creating a request.
+2. Add the request to a **Collection** (a group of related requests).
+3. Name the collection (e.g., `Postman Jobs API`).
+4. Provide a name for the request (e.g., `Get Jobs in San Francisco`).
 
+### Benefits of Collections:
+- Group related requests for easier access.
+- Share collections with team members.
+- Use collections for automated testing.
+
+## 7. Organizing Collections with Folders
+For better organization:
+1. Right-click on a collection and select **Add Folder**.
+2. Name the folder (e.g., `Jobs by Location`).
+3. Drag and drop requests into the folder.
+4. Create multiple levels of folders as needed.
 
