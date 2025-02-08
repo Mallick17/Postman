@@ -1,3 +1,79 @@
+# **REST API Architectural Constraints**
+
+REST (Representational State Transfer) is a set of rules for building web services. APIs that follow these rules are called RESTful APIs. They allow clients (like apps or websites) to interact with servers using HTTP protocols. Below is a breakdown of the **6 key constraints** that make an API RESTful:
+
+### **1. Uniform Interface**
+- **What it means**: There should be a consistent way to interact with the server, no matter the device or app type.
+- **Key Principles**:
+  1. **Resource-Based**: Resources (like users, products) are identified in URLs (e.g., `/api/users`).
+  2. **Manipulation Through Representations**: Clients use representations (like JSON) to modify or delete resources (e.g., using a user ID to update a user).
+  3. **Self-descriptive Messages**: Each request contains enough information for the server to understand and process it.
+  4. **HATEOAS (Hypermedia as the Engine of Application State)**: Responses include links to related resources, helping clients navigate the API.
+
+### **2. Stateless**
+- **What it means**: The server doesn’t store any client session data. Each request from the client must contain all the information needed to process it.
+- **Why it’s good**: Improves scalability and reliability since the server doesn’t need to manage client state.
+- **Drawback**: Clients may need to send more data in each request, increasing bandwidth usage.
+
+### **3. Cacheable**
+- **What it means**: Responses should indicate whether they can be cached (stored) by the client and for how long.
+- **Why it’s good**: Caching reduces repeated requests to the server, improving performance.
+- **Drawback**: Clients might receive stale (outdated) data if caching isn’t managed properly.
+
+### **4. Client-Server**
+- **What it means**: The client and server are separate entities. The client handles the user interface, while the server manages data storage and business logic.
+- **Why it’s good**: They can evolve independently, making the system more flexible and scalable.
+
+### **5. Layered System**
+- **What it means**: The system can have multiple layers (e.g., load balancers, security layers) between the client and server. Each layer only interacts with the immediate next layer.
+- **Why it’s good**: Improves scalability, security, and performance (e.g., through load balancing or shared caches).
+
+### **6. Code on Demand (Optional)**
+- **What it means**: The server can send executable code (like JavaScript) to the client to extend its functionality.
+- **Why it’s optional**: Not all RESTful APIs need this feature, but it can be useful for dynamic client-side behavior.
+
+---
+
+### **Rules for Creating REST APIs**
+1. **Use Nouns, Not Verbs**:
+   - URLs should represent resources (nouns), not actions (verbs).
+   - **Good**: `/api/users`
+   - **Bad**: `/api?type=users`
+
+2. **Use HTTP Verbs**:
+   - Use standard HTTP methods to perform actions:
+     - **GET**: Retrieve data (e.g., `GET /api/users`).
+     - **POST**: Create a resource (e.g., `POST /api/users`).
+     - **PUT**: Update a resource (e.g., `PUT /api/users/1`).
+     - **DELETE**: Remove a resource (e.g., `DELETE /api/users/1`).
+     - **PATCH**: Partially update a resource.
+
+3. **Use Plural Nouns**:
+   - Keep URLs consistent by using plurals (e.g., `/api/users`, not `/api/user`).
+
+4. **Return Proper HTTP Status Codes**:
+   - Indicate success or failure using codes like:
+     - `200 OK`: Success.
+     - `201 Created`: Resource created.
+     - `400 Bad Request`: Invalid input.
+     - `404 Not Found`: Resource not found.
+     - `500 Internal Server Error`: Server error.
+
+5. **Idempotent Methods**:
+   - **GET, PUT, DELETE** are idempotent: Performing the same operation multiple times has the same effect (e.g., deleting a resource twice).
+
+
+### **Example Endpoints**
+| **URI**            | **HTTP Verb** | **Description**                     |
+|---------------------|---------------|-------------------------------------|
+| `/api/users`        | GET           | Get all users.                     |
+| `/api/users`        | POST          | Add a new user.                    |
+| `/api/users/1`      | GET           | Get user with ID 1.                |
+| `/api/users/1`      | PUT           | Update user with ID 1.             |
+| `/api/users/1`      | DELETE        | Delete user with ID 1.             |
+
+---
+
 # Postman API Documentation
 
 ## 1. What is Postman?
