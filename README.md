@@ -25,6 +25,31 @@ Postman is favored for its user-friendly tools and convenience. Here are some ke
 
 ## Postman Navigation
 ![postman-ui-v11 26](https://github.com/user-attachments/assets/c7e81d08-bbcd-4661-8df3-f5af9bc63a7d)
+<br>
+### **Sidebar: The Organizer**
+- **What:** The sidebar typically houses collections, environments, and history.
+- **How:** It allows you to navigate through your saved API requests, organize them into folders, and switch between different environments.
+- **Why:** This helps in maintaining a structured and easily accessible repository of your API endpoints and configurations.
+
+### **Header: The Control Center**
+- **What:** The header contains the main navigation options like Home, Workspaces, and API Network, along with a search bar.
+- **How:** You can use it to switch between different views, search for specific items, and access collaborative workspaces.
+- **Why:** It provides quick access to essential features, ensuring smooth navigation and efficient workflow management.
+
+### **Workbench: The Interaction Hub**
+- **What:** The central area, or workbench, is where you build and send API requests.
+- **How:** You can enter URLs, select HTTP methods, add parameters, headers, and body content, and view responses.
+- **Why:** This is the core area for interacting with APIs, allowing you to test and debug endpoints effectively.
+
+### **Footer: The Status Indicator**
+- **What:** The footer usually displays status information, such as the response status code, response time, and size.
+- **How:** It provides real-time feedback on the API request's outcome.
+- **Why:** This immediate feedback is crucial for understanding the performance and success of your API calls.
+
+### **Right Sidebar: The Detailer**
+- **What:** The right sidebar often contains additional details and tools, such as documentation, examples, and settings.
+- **How:** It can show contextual information related to the selected request or collection, and provide quick access to related resources.
+- **Why:** This enhances your understanding and efficiency by offering relevant information and tools at your fingertips.
 
 
 ## 2. Sending Your First Request
